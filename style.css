@@ -58,7 +58,14 @@ nav ul li input[type="search"] {
 
 section {
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.main-container {
+    margin: 0 auto;
+    max-width: 900px;
 }
 
 footer {
@@ -77,3 +84,99 @@ footer p {
     height: auto; 
     vertical-align: middle; 
 } */
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.feature {
+    background: #fff; 
+    color: #080c1d;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border-radius: 10px; 
+}
+
+.feature p {
+    font-size: 0.9rem
+}
+
+.feature-icon {
+    width: 80px; 
+    margin: 0 auto 20px;
+}
+
+.team-container-wide {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+
+.team-member {
+    flex: 0 0 20%;
+    min-width: 100px;
+    max-width: 250px;
+    background: #fff;
+    color: #080c1d;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 200px; 
+    margin: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-pic {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.social-icon {
+    width: 70px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
