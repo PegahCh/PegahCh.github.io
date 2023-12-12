@@ -59,7 +59,7 @@ nav ul li input[type="search"] {
 section {
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 900px;
     text-align: center;
 }
 
@@ -101,6 +101,11 @@ footer p {
     border-radius: 10px; 
 }
 
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
 .feature p {
     font-size: 0.9rem
 }
@@ -109,6 +114,66 @@ footer p {
     width: 80px; 
     margin: 0 auto 20px;
 }
+
+.demo-section {
+    background-color: #fff; 
+    color: #080c1d; 
+    padding: 20px;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    margin-botton: 1em;
+  }
+  
+  .demo-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (2, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
+    padding: 20px;
+  }
+  
+  .demo-buttons button {
+    background-color: #21262D; /* Dark button background */
+    color: #C9D1D9; /* Light text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+
+  @media (maxwidth: 600px) {
+    .demo-buttons {
+        grid-template-columns: 1fr;
+    }
+  }
+  
+  .demo-buttons button:hover {
+    background-color: #15297A; /* Slightly lighter on hover */
+  }
+  
+  .demo-display {
+    text-align: center;
+    margin-top: 20px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #demo-gif {
+    width: 100%; /* Responsive to the container */
+    height: auto;
+    border-radius: 10px; /* Match the border radius of the section */
+    max-height: 500px;
+  }  
 
 .team-container-wide {
     max-width: 2000px;

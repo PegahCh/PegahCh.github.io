@@ -29,7 +29,6 @@
             <p>KubeVX is an innovative, user-centric Kubernetes visualization tool, designed to simplify and enhance the understanding of complex Kubernetes architectures. This dynamic application features a comprehensive dashboard for monitoring key cluster metrics, alongside a custom metrics functionality that allows users to select and visualize specific metrics over their chosen time periods. Additionally, KubeVX boasts a robust logs feature and an alertmanager that not only emails users during critical cluster events but also displays these events within the app for real-time awareness. A standout feature is the cluster view, offering a detailed topographical diagram of the user's Kubernetes cluster, complemented by an AI assistant that interprets structural data and answers questions about cluster components. This AI-enhanced guidance aids users in comprehending their Kubernetes setup and the functionality of various elements. To further support user learning, KubeVX includes a 'Learn Kubernetes' section filled with educational content, making it a comprehensive tool for both monitoring and understanding Kubernetes clusters.
             </p>
         </section>
-
         <section id="features">
             <h2>Features</h2>
             <div class="feature-container">
@@ -65,19 +64,28 @@
                 </div>
             </div>
         </section>
-
-        <section id="demo">
-            <h2>Demo</h2>
-            <p>Instructions or links for getting started...</p>
-            <p>link to git hub readme</p>
+        <section id="demo" class="demo-section">
+            <h2>See KubeVX in Action</h2>
+            <p>Click to see a demo of each feature</p>
+            <div class="demo-buttons">
+                <button demo-feature="main-dashboard">Main Dashboard</button>
+                <button demo-feature="custom-metrics">Custom Metrics</button>
+                <button demo-feature="cluster-view">Cluster View</button>
+                <button demo-feature="logs">Logs</button>
+                <button demo-feature="alert-manager">Alert Manager</button>
+                <button demo-feature="learn-k8s">Learn Kubernetes</button>
+            </div>
+            <div class="demo-display">
+                <img id="demo-gif" src="/assets/main-dashboard.gif" alt="Demo Display">
+            </div>
         </section>
-
+        
         <section id="get-started">
             <h2>Get Started</h2>
             <p>Instructions or links for getting started...</p>
             <p>link to git hub readme</p>
         </section>
-    </div>
+        </div>
     <div class="team-container-wide">
         <section id="team">
             <h2>Our Team</h2>
@@ -148,5 +156,6 @@
     <footer>
         <p>© 2023 KubeVX</p>
     </footer>
+<script src="index.js"></script>
 </body>
 </html>
