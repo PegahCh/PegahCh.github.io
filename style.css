@@ -13,6 +13,11 @@ header {
     text-align: center;
 }
 
+.website-name {
+    font-family: 'Noto Serif', serif;
+}
+
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -40,6 +45,11 @@ nav ul li {
     margin: 0 10px;
 }
 
+nav ul li a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
 nav ul li a, nav ul li input[type="search"] {
     color: #fff;
     text-decoration: none;
@@ -61,6 +71,10 @@ section {
     margin: 20px auto;
     max-width: 900px;
     text-align: center;
+}
+
+.main-title {
+    font-size: 2.5rem; 
 }
 
 .main-container {
@@ -102,8 +116,10 @@ footer p {
 }
 
 .feature:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Keeps the existing upward movement */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Keeps the existing shadow */
+    background-color: #f2f2f2; /* Changes the background color */
+    color: #080c1d; /* Changes the text color, if needed */
 }
 
 .feature p {
@@ -126,9 +142,9 @@ footer p {
     margin-bottom: 0.5em;
   }
 
-  p {
+  /* p {
     margin-botton: 1em;
-  }
+  } */
   
   .demo-buttons {
     display: grid;
@@ -141,8 +157,8 @@ footer p {
   }
   
   .demo-buttons button {
-    background-color: #21262D; /* Dark button background */
-    color: #C9D1D9; /* Light text */
+    background-color: #3080cc; /* Dark button background */
+    color: #fff; /* Light text */
     border: none;
     padding: 10px 20px;
     border-radius: 5px; /* Rounded corners */
@@ -157,7 +173,9 @@ footer p {
   }
   
   .demo-buttons button:hover {
-    background-color: #15297A; /* Slightly lighter on hover */
+    /* background-color: #15297A;  */
+    background-color: #6ca9e5; /* Slightly lighter on hover */
+
   }
   
   .demo-display {
@@ -209,8 +227,10 @@ footer p {
 }
 
 .team-member:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Keeps the existing upward movement */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Keeps the existing shadow */
+    background-color: #f2f2f2; /* Changes the background color */
+    color: #080c1d;
 }
 
 .team-pic {
