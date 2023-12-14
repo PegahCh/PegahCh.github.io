@@ -13,11 +13,6 @@ header {
     text-align: center;
 }
 
-.website-name {
-    font-family: 'Noto Serif', serif;
-}
-
-
 .logo-container {
     display: flex;
     align-items: center;
@@ -25,19 +20,30 @@ header {
 }
 
 #logo {
-    width: 100px; 
+    width: 140px; 
     height: auto; 
 }
 
 .website-name {
-    font-size: 3em; 
+    font-size: 4em; 
     margin-left: 10px; 
     color: #fff; 
+    font-weight: bold;
+}
+
+.website-tagline {
+    display: block; 
+    font-size: 0.7em;
+    color: #dad6d6; 
+    font-weight: normal; 
+    letter-spacing: 0.3em; 
+    margin-top: -1.5em;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin-top: 30px;
 }
 
 nav ul li {
@@ -48,7 +54,6 @@ nav ul li {
 nav ul li a:hover {
     color: rgba(255, 255, 255, 0.5);
 }
-
 
 nav ul li a, nav ul li input[type="search"] {
     color: #fff;
@@ -98,6 +103,7 @@ footer p {
     height: auto; 
     vertical-align: middle; 
 } */
+
 .feature-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -116,10 +122,10 @@ footer p {
 }
 
 .feature:hover {
-    transform: translateY(-5px); /* Keeps the existing upward movement */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Keeps the existing shadow */
-    background-color: #f2f2f2; /* Changes the background color */
-    color: #080c1d; /* Changes the text color, if needed */
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+    background-color: #f2f2f2; 
+    color: #080c1d; 
 }
 
 .feature p {
@@ -142,28 +148,24 @@ footer p {
     margin-bottom: 0.5em;
   }
 
-  /* p {
-    margin-botton: 1em;
-  } */
-  
   .demo-buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat (2, auto);
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Space between buttons */
+    gap: 10px; 
     padding: 20px;
   }
   
   .demo-buttons button {
-    background-color: #3080cc; /* Dark button background */
-    color: #fff; /* Light text */
+    background-color: #3080cc; 
+    color: #fff; 
     border: none;
     padding: 10px 20px;
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
   }
 
   @media (maxwidth: 600px) {
@@ -173,8 +175,7 @@ footer p {
   }
   
   .demo-buttons button:hover {
-    /* background-color: #15297A;  */
-    background-color: #6ca9e5; /* Slightly lighter on hover */
+    background-color: #6ca9e5; 
 
   }
   
@@ -187,9 +188,9 @@ footer p {
   }
   
   #demo-gif {
-    width: 100%; /* Responsive to the container */
+    width: 100%; 
     height: auto;
-    border-radius: 10px; /* Match the border radius of the section */
+    border-radius: 10px; 
     max-height: 500px;
   }  
 
@@ -205,7 +206,6 @@ footer p {
     flex-wrap: wrap; 
     gap: 20px; 
 }
-
 
 .team-member {
     flex: 0 0 20%;
@@ -227,9 +227,9 @@ footer p {
 }
 
 .team-member:hover {
-    transform: translateY(-5px); /* Keeps the existing upward movement */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Keeps the existing shadow */
-    background-color: #f2f2f2; /* Changes the background color */
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+    background-color: #f2f2f2; 
     color: #080c1d;
 }
 
